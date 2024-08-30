@@ -1,7 +1,6 @@
-/* Apply a background color to the entire app */
 body {
-  background-color: #1f1f1f; /* Light grey background */
-  font-family: "Roboto", sans-serif; /* Ensure consistent font */
+  background-color: #1f1f1f;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
@@ -11,7 +10,6 @@ body {
   user-select: none;
 }
 
-/* Add some padding to the main app component */
 .game-wrapper {
   width: 100%;
 }

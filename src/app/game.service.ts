@@ -93,7 +93,7 @@ export class GameService {
 				{ mumbled: "Nose Trying Set Ash Tea ", actual: "No strings attached" },
 				{ mumbled: "It Spit Earth An Ache I Speak Ted ", actual: "It's bigger than I expected" },
 				{ mumbled: "Pain Is En Lore German Till", actual: "Penis enlargement pills" },
-				{ mumbled: "Las To Eat Oz Rate", actual: "Last night was great" },
+				{ mumbled: "Las To Aite Oz Rate", actual: "Last night was great" },
 				{ mumbled: "Sing Gill An Dread It Um Ing Gill", actual: "Single and ready to mingle" },
 				{ mumbled: "An Sat Is Fight Sec Sleeve", actual: "Unsatisfied sex life" }
 			]
