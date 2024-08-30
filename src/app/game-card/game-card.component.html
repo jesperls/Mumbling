@@ -1,0 +1,39 @@
+<div class="timer-container" *ngIf="timerEnabled">
+  <p>Countdown: {{ countdown | number : "1.0-0" }}s</p>
+</div>
+<div class="category-container" *ngIf="selectedCategory === categories[0].title">
+  <p>{{ cardCategory }}</p>
+</div>
+
+<div class="card-container" [class.flipped]="isFlipped" (click)="flipCard()">
+  <div class="card">
+    <div class="card-front">
+      <p>{{ currentPhrase.mumbled }}</p>
+    </div>
+    <div class="card-back">
+      <p>{{ currentPhrase.actual }}</p>
+    </div>
+  </div>
+</div>
+
+<div class="controls">
+  <mat-form-field appearance="fill">
+    <mat-label>Select Category</mat-label>
+    <mat-select [(value)]="selectedCategory">
+      <mat-option *ngFor="let category of categories" [value]="category.title">
+        {{ category.title }}
+        <span *ngIf="category?.amount">
+          ({{ category.amount }})
+        </span>
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="getNextCard()">
+    New Card
+  </button>
+
+  <button mat-raised-button color="accent" (click)="toggleTimer()">
+    {{ timerEnabled ? "Disable Timer" : "Enable Timer" }}
+  </button>
+</div>

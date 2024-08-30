@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+/* Apply a background color to the entire app */
+body {
+  background-color: #1f1f1f; /* Light grey background */
+  font-family: "Roboto", sans-serif; /* Ensure consistent font */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  user-select: none;
+}
+
+/* Add some padding to the main app component */
+.game-wrapper {
+  width: 100%;
+}
+
+app-root {
+  width: 100%;
+}
