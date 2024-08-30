@@ -48,6 +48,7 @@
   color: #ffffff;
 }
 
+
 .card-front {
   background-color: #ff9800;
 }
@@ -55,6 +56,14 @@
 .card-back {
   background-color: #4caf50;
   transform: rotateY(180deg);
+}
+
+.card-front:hover {
+  background-color: #ffa800;
+}
+
+.card-back:hover {
+  background-color: #52b955;
 }
 
 .controls {
